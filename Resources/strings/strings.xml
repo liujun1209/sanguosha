@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">  
+<plist version="1.0">
+<dict>
+<key>inputNick</key>
+<string>请输入你的昵称</string>
+<key>lobbyRoomName</key>
+<string>的房间</string>
+
+<key>lordChooseGeneral</key>
+<string>主公选将</string>
+<key>chooseGeneral</key>
+<string>选  将</string>
+<key>lordGeneral</key>
+<string>主公武将</string>
+
+<!-- error code -->
+<key>101</key>
+<string>对不起，房间已满</string>
+<key>102</key>
+<string>与服务器版本不一致</string>
+
+
+</dict>
+</plist>

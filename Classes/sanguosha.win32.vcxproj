@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4488B182-D303-494F-907D-6F3B9591022A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>E:\cocos2d-2.0-x-2.0.3\cocos2d-2.0-x-2.0.3\Debug.win32;$(LibraryPath);D:\lib\boost_1_46_1\boost_1_46_1\lib</LibraryPath>
+    <IncludePath>E:\cocos2d-2.0-x-2.0.3\cocos2d-2.0-x-2.0.3\extensions;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>sanguosha.h</HeaderFileName>
+      <InterfaceIdentifierFileName>sanguosha_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>sanguosha_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/sanguosha.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>sanguosha.h</HeaderFileName>
+      <InterfaceIdentifierFileName>sanguosha_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>sanguosha_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/sanguosha.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Resources\CloseNormal.png" />
+    <None Include="..\Resources\CloseSelected.png" />
+    <None Include="..\Resources\HelloWorld.png" />
+    <None Include="Android.mk" />
+    <None Include="res\sanguosha.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sanguosha.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="AboutUsScene.h" />
+    <ClInclude Include="AnimationManager.h" />
+    <ClInclude Include="AsioClient.h" />
+    <ClInclude Include="AsioPtr.h" />
+    <ClInclude Include="AsioServer.h" />
+    <ClInclude Include="AsioTimer.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="CardConstants.h" />
+    <ClInclude Include="CardItem.h" />
+    <ClInclude Include="CardSelector.h" />
+    <ClInclude Include="PlayerBoard.h" />
+    <ClInclude Include="CCTouchNode.h" />
+    <ClInclude Include="ChooseGeneralLayer.h" />
+    <ClInclude Include="ClientIoHandler.h" />
+    <ClInclude Include="ClientPlayer.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="ConnectionManager.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="LoadingScene.h" />
+    <ClInclude Include="PacketFactory.h" />
+    <ClInclude Include="PlayerControllerBoard.h" />
+    <ClInclude Include="PlayerSelector.h" />
+    <ClInclude Include="PlayerUI.h" />
+    <ClInclude Include="SelectorManager.h" />
+    <ClInclude Include="SgsClient.h" />
+    <ClInclude Include="SgsServer.h" />
+    <ClInclude Include="SgsUtil.h" />
+    <ClInclude Include="TableAnimationLayer.h" />
+    <ClInclude Include="WaitingRoomScene.h" />
+    <ClInclude Include="CursorTextField.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="ExpPattern.h" />
+    <ClInclude Include="General.h" />
+    <ClInclude Include="IoHandler.h" />
+    <ClInclude Include="IoServicePool.h" />
+    <ClInclude Include="LobbyScene.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="MainScene.h" />
+    <ClInclude Include="MQScene.h" />
+    <ClInclude Include="MyLock.h" />
+    <ClInclude Include="MyLogger.h" />
+    <ClInclude Include="Package.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="pugiconfig.hpp" />
+    <ClInclude Include="pugixml.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="ServerPlayer.h" />
+    <ClInclude Include="SgsDialog.h" />
+    <ClInclude Include="Skill.h" />
+    <ClInclude Include="StringResource.h" />
+    <ClInclude Include="TableScene.h" />
+    <ClInclude Include="UIThreadMQ.h" />
+    <ClInclude Include="XmlIoHandler.h" />
+    <ClInclude Include="Standard.h" />
+    <ClInclude Include="Structs.h" />
+    <ClInclude Include="Tag.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="AboutUsScene.cpp" />
+    <ClCompile Include="AnimationManager.cpp" />
+    <ClCompile Include="AsioClient.cpp" />
+    <ClCompile Include="AsioServer.cpp" />
+    <ClCompile Include="AsioTimer.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="CardItem.cpp" />
+    <ClCompile Include="CardSelector.cpp" />
+    <ClCompile Include="PlayerBoard.cpp" />
+    <ClCompile Include="CCTouchNode.cpp" />
+    <ClCompile Include="ChooseGeneralLayer.cpp" />
+    <ClCompile Include="ClientIoHandler.cpp" />
+    <ClCompile Include="ClientPlayer.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="ConnectionManager.cpp" />
+    <ClCompile Include="LoadingScene.cpp" />
+    <ClCompile Include="PacketFactory.cpp" />
+    <ClCompile Include="PlayerControllerBoard.cpp" />
+    <ClCompile Include="PlayerSelector.cpp" />
+    <ClCompile Include="PlayerUI.cpp" />
+    <ClCompile Include="SelectorManager.cpp" />
+    <ClCompile Include="SgsClient.cpp" />
+    <ClCompile Include="SgsServer.cpp" />
+    <ClCompile Include="SgsUtil.cpp" />
+    <ClCompile Include="StandardGenerals.cpp" />
+    <ClCompile Include="TableAnimationLayer.cpp" />
+    <ClCompile Include="WaitingRoomScene.cpp" />
+    <ClCompile Include="CursorTextField.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="ExpPattern.cpp" />
+    <ClCompile Include="General.cpp" />
+    <ClCompile Include="IoHandler.cpp" />
+    <ClCompile Include="IoServicePool.cpp" />
+    <ClCompile Include="LobbyScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainScene.cpp" />
+    <ClCompile Include="MQScene.cpp" />
+    <ClCompile Include="Package.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="pugixml.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="ServerPlayer.cpp" />
+    <ClCompile Include="SgsDialog.cpp" />
+    <ClCompile Include="Skill.cpp" />
+    <ClCompile Include="StringResource.cpp" />
+    <ClCompile Include="TableScene.cpp" />
+    <ClCompile Include="UIThreadMQ.cpp" />
+    <ClCompile Include="XmlIoHandler.cpp" />
+    <ClCompile Include="Standard.cpp" />
+    <ClCompile Include="StandardCards.cpp" />
+    <ClCompile Include="Structs.cpp" />
+    <ClCompile Include="Tag.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

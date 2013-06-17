@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{bad30d69-b8a1-42aa-873f-85db28e8ff5d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{81749152-7b8a-4562-b44d-e4ac340d96a7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{b34f7783-f854-45bf-8604-8941a6d5e4cf}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="include\constants">
+      <UniqueIdentifier>{c0a94dd7-40fd-40e2-b897-a4b60698eb64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\scene">
+      <UniqueIdentifier>{7fd6b271-610f-493b-994b-5b8a0a7a809c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\scene">
+      <UniqueIdentifier>{ddfcb02e-1ea8-495b-818c-66e243b55bfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{7fb7e8c5-12f9-406a-85d9-5b2241f7ceba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core">
+      <UniqueIdentifier>{c8ad572c-4e3c-4b84-8f1e-56921ce6340d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\server">
+      <UniqueIdentifier>{da32963b-0b90-4a68-9022-628bb4761f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\package">
+      <UniqueIdentifier>{48b9445f-0fd4-450b-a439-50407ecc117b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\server">
+      <UniqueIdentifier>{1a56c1de-4073-42dd-b3fc-06848716bd35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\package">
+      <UniqueIdentifier>{2ec41cb6-4a8f-4c29-a6d7-3fd2590f0af0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\net">
+      <UniqueIdentifier>{d5c4f773-f9b3-4f68-84ee-bc14c553ecc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\utils">
+      <UniqueIdentifier>{69f2c89d-f544-43b8-a5a1-82f188e24e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\net">
+      <UniqueIdentifier>{b8b33b0e-b2fc-4355-af53-2bf227525dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\xml">
+      <UniqueIdentifier>{f5b7df8d-0033-4993-a03e-770a88195d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\xml">
+      <UniqueIdentifier>{b3aca547-2b09-4304-b4f5-944fb0d197d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\util">
+      <UniqueIdentifier>{25c96a46-cb90-42d1-b9c2-303a36c7e659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ui">
+      <UniqueIdentifier>{4674b2e8-fbdb-4b3f-b5ca-5be886ec3631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ui">
+      <UniqueIdentifier>{d8c16b20-97c0-4215-9387-448dcc6f1e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\client">
+      <UniqueIdentifier>{afce2086-b906-4cfc-a6ed-a091dfddf270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\client">
+      <UniqueIdentifier>{752e64a6-f564-4fd8-833f-ac3c766a2c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\layer">
+      <UniqueIdentifier>{8d197fb7-2cd6-440b-82a8-00cc39a2973b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\layer">
+      <UniqueIdentifier>{7861dc84-5aa7-400e-a825-9b88050ee565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\selector">
+      <UniqueIdentifier>{b60b7a02-96ea-4a1f-a888-7dc368e4bf80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\selector">
+      <UniqueIdentifier>{81f35843-30c1-4ad6-bd5c-7644fbb5dd5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sanguosha.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="Android.mk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sanguosha.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>include\constants</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>include\constants</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutUsScene.h">
+      <Filter>include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>include\constants</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerPlayer.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="General.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="Standard.h">
+      <Filter>include\package</Filter>
+    </ClInclude>
+    <ClInclude Include="Package.h">
+      <Filter>include\package</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpPattern.h">
+      <Filter>include\package</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsioServer.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="IoServicePool.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="AsioPtr.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLock.h">
+      <Filter>include\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="IoHandler.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionManager.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="Tag.h">
+      <Filter>include\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="pugiconfig.hpp">
+      <Filter>include\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml.hpp">
+      <Filter>include\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="AsioTimer.h">
+      <Filter>include\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlIoHandler.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLogger.h">
+      <Filter>include\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AsioClient.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="CursorTextField.h">
+      <Filter>include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="SgsDialog.h">
+      <Filter>include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>include\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="StringResource.h">
+      <Filter>include\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="UIThreadMQ.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyScene.h">
+      <Filter>include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="MQScene.h">
+      <Filter>include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TableScene.h">
+      <Filter>include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitingRoomScene.h">
+      <Filter>include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SgsServer.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="SgsClient.h">
+      <Filter>include\client</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="CCTouchNode.h">
+      <Filter>include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBoard.h">
+      <Filter>include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseGeneralLayer.h">
+      <Filter>include\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerControllerBoard.h">
+      <Filter>include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="CardItem.h">
+      <Filter>include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="TableAnimationLayer.h">
+      <Filter>include\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="SgsUtil.h">
+      <Filter>include\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CardSelector.h">
+      <Filter>include\selector</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSelector.h">
+      <Filter>include\selector</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectorManager.h">
+      <Filter>include\selector</Filter>
+    </ClInclude>
+    <ClInclude Include="CardConstants.h">
+      <Filter>include\constants</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientPlayer.h">
+      <Filter>include\client</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerUI.h">
+      <Filter>include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientIoHandler.h">
+      <Filter>include\client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutUsScene.cpp">
+      <Filter>source\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>source\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerPlayer.cpp">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="General.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package.cpp">
+      <Filter>source\package</Filter>
+    </ClCompile>
+    <ClCompile Include="Structs.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpPattern.cpp">
+      <Filter>source\package</Filter>
+    </ClCompile>
+    <ClCompile Include="Standard.cpp">
+      <Filter>source\package</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardCards.cpp">
+      <Filter>source\package</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection.cpp">
+      <Filter>source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionManager.cpp">
+      <Filter>source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="AsioServer.cpp">
+      <Filter>source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="IoHandler.cpp">
+      <Filter>source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="IoServicePool.cpp">
+      <Filter>source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="Tag.cpp">
+      <Filter>source\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="AsioTimer.cpp">
+      <Filter>source\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml.cpp">
+      <Filter>source\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlIoHandler.cpp">
+      <Filter>source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="AsioClient.cpp">
+      <Filter>source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="CursorTextField.cpp">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>source\util</Filter>
+    </ClCompile>
+    <ClCompile Include="SgsDialog.cpp">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="StringResource.cpp">
+      <Filter>source\util</Filter>
+    </ClCompile>
+    <ClCompile Include="UIThreadMQ.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyScene.cpp">
+      <Filter>source\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationManager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="MQScene.cpp">
+      <Filter>source\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TableScene.cpp">
+      <Filter>source\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitingRoomScene.cpp">
+      <Filter>source\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CardItem.cpp">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientIoHandler.cpp">
+      <Filter>source\client</Filter>
+    </ClCompile>
+    <ClCompile Include="SgsServer.cpp">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketFactory.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SgsClient.cpp">
+      <Filter>source\client</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientPlayer.cpp">
+      <Filter>source\client</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardGenerals.cpp">
+      <Filter>source\package</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingScene.cpp">
+      <Filter>source\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CCTouchNode.cpp">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBoard.cpp">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseGeneralLayer.cpp">
+      <Filter>source\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerControllerBoard.cpp">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="TableAnimationLayer.cpp">
+      <Filter>source\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="SgsUtil.cpp">
+      <Filter>source\util</Filter>
+    </ClCompile>
+    <ClCompile Include="CardSelector.cpp">
+      <Filter>source\selector</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSelector.cpp">
+      <Filter>source\selector</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectorManager.cpp">
+      <Filter>source\selector</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerUI.cpp">
+      <Filter>source\ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

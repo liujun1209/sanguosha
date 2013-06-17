@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
+<plist version="1.0">
+<dict>
+<key>jianxiong_chinese</key>
+<string>奸雄</string>
+<key>jianxiong_description</key>
+<string>你每受到一次伤害，你可以获得对你造成伤害的牌。</string>
+<key>hujia_chinese</key>
+<string>护驾</string>
+<key>hujia_description</key>
+<string>主公技，当你需要使用或打出一张【闪】时，你可令其他魏势力角色打出一张【闪】（视为由你使用或打出）。</string>
+
+<key>rende_chinese</key>
+<string>仁德</string>
+<key>rende_description</key>
+<string>出牌阶段，你可以将任意数量的手牌交给其他角色，若你给出的牌张数达到两张或更多时，你回复1点体力。</string>
+<key>jijiang_chinese</key>
+<string>激将</string>
+<key>jijiang_description</key>
+<string>主公技，当你需要使用或打出一张【杀】时，你可令其他蜀势力角色打出一张【杀】（视为由你使用或打出）。</string>
+
+<key>zhiheng_chinese</key>
+<string>制衡</string>
+<key>zhiheng_description</key>
+<string>出牌阶段，你可以弃置任意数量的牌,然后摸等量的牌。每个阶段限一次。</string>
+<key>jiuyuan_chinese</key>
+<string>救援</string>
+<key>jiuyuan_description</key>
+<string>主公技，锁定技，当其它吴势力角色在你濒死状态下对你使用【桃】时，你额外回复1点体力。</string>
+</dict>
+</plist>
